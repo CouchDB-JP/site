@@ -49,6 +49,7 @@ module.exports = function(site){
      * Define the top page using posts resources.
      */
     site.get('/',
+             $.stylesheets('/posts/stylesheets/posts.css'),
              $.title('Home'),
              posts.byTag('news'),
              site.view.render('index.ejs'),
